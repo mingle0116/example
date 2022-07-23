@@ -1,0 +1,39 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Ex3_SDI - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/Ex3_SDI.res" /d "_DEBUG" /d "_AFXDLL" "D:\visual_resipo\Ex3_SDI\Ex3_SDI.rc"" 
+Creating temporary file "C:\Windows\TEMP\RSP14D6.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/Ex3_SDI.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\visual_resipo\Ex3_SDI\MainFrm.cpp"
+]
+Creating command line "cl.exe @C:\Windows\TEMP\RSP14D6.tmp" 
+Creating temporary file "C:\Windows\TEMP\RSP14D7.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/Ex3_SDI.pdb" /debug /machine:I386 /out:"Debug/Ex3_SDI.exe" /pdbtype:sept 
+.\Debug\Ex3_SDI.obj
+.\Debug\Ex3_SDIDoc.obj
+.\Debug\Ex3_SDIView.obj
+.\Debug\MainFrm.obj
+.\Debug\StdAfx.obj
+.\Debug\Ex3_SDI.res
+]
+Creating command line "link.exe @C:\Windows\TEMP\RSP14D7.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+MainFrm.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+Ex3_SDI.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

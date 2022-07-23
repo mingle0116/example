@@ -1,0 +1,48 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Ex_Rec - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Windows\TEMP\RSP6157.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/Ex_Rec.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\visual_resipo\Ex_Rec\ChildFrm.cpp"
+"D:\visual_resipo\Ex_Rec\Ex_Rec.cpp"
+"D:\visual_resipo\Ex_Rec\Draw.cpp"
+]
+Creating command line "cl.exe @C:\Windows\TEMP\RSP6157.tmp" 
+Creating temporary file "C:\Windows\TEMP\RSP6158.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/Ex_Rec.pdb" /debug /machine:I386 /out:"Debug/Ex_Rec.exe" /pdbtype:sept 
+.\Debug\ChildFrm.obj
+.\Debug\Ex_Rec.obj
+.\Debug\Ex_RecDoc.obj
+.\Debug\Ex_RecView.obj
+.\Debug\MainFrm.obj
+.\Debug\StdAfx.obj
+.\Debug\Ex_Rec.res
+.\Debug\Draw.obj
+]
+Creating command line "link.exe @C:\Windows\TEMP\RSP6158.tmp"
+<h3>Output Window</h3>
+Compiling...
+Draw.cpp
+Generating Code...
+Skipping... (no relevant changes detected)
+ChildFrm.cpp
+Ex_Rec.cpp
+Linking...
+Creating command line "bscmake.exe /nologo /o"Debug/Ex_Rec.bsc"  .\Debug\StdAfx.sbr .\Debug\ChildFrm.sbr .\Debug\Ex_Rec.sbr .\Debug\Ex_RecDoc.sbr .\Debug\Ex_RecView.sbr .\Debug\MainFrm.sbr .\Debug\Draw.sbr"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+Ex_Rec.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

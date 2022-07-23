@@ -1,0 +1,56 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Liberary System - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Windows\TEMP\RSP6ED7.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/Liberary System.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ   /c 
+"D:\Visual_Project_4_19\Liberary System\Liberary System.cpp"
+"D:\Visual_Project_4_19\Liberary System\MainFrm.cpp"
+"D:\Visual_Project_4_19\Liberary System\Liberary SystemDoc.cpp"
+"D:\Visual_Project_4_19\Liberary System\Liberary SystemView.cpp"
+]
+Creating command line "cl.exe @C:\Windows\TEMP\RSP6ED7.tmp" 
+Creating temporary file "C:\Windows\TEMP\RSP6ED8.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/Liberary System.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ   /c 
+"D:\Visual_Project_4_19\Liberary System\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Windows\TEMP\RSP6ED8.tmp" 
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+Liberary System.cpp
+MainFrm.cpp
+Liberary SystemDoc.cpp
+Liberary SystemView.cpp
+Generating Code...
+Creating temporary file "C:\Windows\TEMP\RSP7031.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/Liberary System.pdb" /debug /machine:I386 /out:"Debug/Liberary System.exe" /pdbtype:sept 
+".\Debug\Liberary System.obj"
+".\Debug\StdAfx.obj"
+".\Debug\MainFrm.obj"
+".\Debug\Liberary SystemDoc.obj"
+".\Debug\Liberary SystemView.obj"
+".\Debug\Liberary System.res"
+]
+Creating command line "link.exe @C:\Windows\TEMP\RSP7031.tmp"
+<h3>Output Window</h3>
+Linking...
+Creating command line "bscmake.exe /nologo /o"Debug/Liberary System.bsc"  ".\Debug\StdAfx.sbr" ".\Debug\Liberary System.sbr" ".\Debug\MainFrm.sbr" ".\Debug\Liberary SystemDoc.sbr" ".\Debug\Liberary SystemView.sbr""
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+Liberary System.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

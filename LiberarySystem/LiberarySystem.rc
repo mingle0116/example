@@ -1,0 +1,542 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\LiberarySystem.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\LiberarySystem.ico"
+IDI_Reader              ICON    DISCARDABLE     "res\\Reader.ico"
+IDI_Admin               ICON    DISCARDABLE     "res\\Adminstrator.ico"
+IDI_Liberary            ICON    DISCARDABLE     "res\\Liberary.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_LIBERARYSYSTEM_DIALOG DIALOGEX 0, 0, 232, 218
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "LiberarySystem"
+FONT 9, "宋体"
+BEGIN
+    GROUPBOX        "欢迎使用 “明” 图书馆管理系统",IDC_STATIC,22,15,184,
+                    190,0,WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    PUSHBUTTON      "登录",IDC_LOGIN,36,151,50,18
+    PUSHBUTTON      "注册",IDC_SIGNIN,91,151,50,17
+    PUSHBUTTON      "退出",IDC_EXIT,144,151,50,18
+    LTEXT           "我们的宗旨是“方便你借书，阅书，希望你看的都‘明明白白’”。              祝你使用愉快！！！",
+                    IDC_STATIC,50,41,135,60
+END
+
+IDD_Register_DIALOG1 DIALOG DISCARDABLE  0, 0, 187, 196
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Liberary System"
+FONT 10, "System"
+BEGIN
+    GROUPBOX        "注册界面",IDC_STATIC,18,7,145,162
+    LTEXT           "账号",IDC_STATIC,28,31,17,8,NOT WS_GROUP
+    EDITTEXT        IDC_ACCOUNT_EDIT1,50,29,96,14,ES_AUTOHSCROLL | WS_GROUP
+    LTEXT           "密码",IDC_STATIC,29,53,17,8
+    EDITTEXT        IDC_PASSWORD_EDIT2,50,49,97,14,ES_AUTOHSCROLL
+    LTEXT           "确认密码",IDC_STATIC,29,76,33,8
+    EDITTEXT        IDC_COMMIT_EDIT3,64,72,84,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "注册",IDC_SIGNIN_BUTTON1,26,139,50,14
+    PUSHBUTTON      "取消",IDC_CANCEL_BUTTON2,106,139,50,14
+    LTEXT           "专业",IDC_STATIC,28,94,17,8
+    EDITTEXT        IDC_MAJOR_EDIT1,50,92,97,14,ES_AUTOHSCROLL
+    LTEXT           "姓名",IDC_STATIC,30,111,17,8
+    EDITTEXT        IDC_NAME_EDIT2,50,109,96,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "返回",IDC_BACK_BUTTON,130,175,50,14
+END
+
+IDD_Login_DIALOG2 DIALOG DISCARDABLE  0, 0, 187, 166
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "登录界面"
+FONT 10, "System"
+BEGIN
+    GROUPBOX        "登陆页面",IDC_STATIC,16,17,156,129
+    LTEXT           "你好，请选择登录模式          学生模式或管理员模式",
+                    IDC_STATIC,44,34,92,22
+    PUSHBUTTON      "学生登录",IDC_STU_BUTTON,20,124,39,9
+    PUSHBUTTON      "管理员登录",IDC_ADMIN_BUTTON,73,123,43,10
+    PUSHBUTTON      "返回",IDC_BACK_BUTTON,128,122,35,10
+END
+
+IDD_StuLogin_DIALOG3 DIALOG DISCARDABLE  0, 0, 187, 162
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "学生登陆"
+FONT 10, "System"
+BEGIN
+    GROUPBOX        "学生登录界面",IDC_STATIC,20,15,145,117
+    LTEXT           "账号",IDC_STATIC,28,34,17,8,NOT WS_GROUP
+    EDITTEXT        IDC_ACCOUNT_EDIT1,50,32,96,14,ES_AUTOHSCROLL | WS_GROUP
+    LTEXT           "密码",IDC_STATIC,29,56,17,8
+    EDITTEXT        IDC_PASSWORD_EDIT2,50,52,97,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "登录",IDC_LOGIN_BUTTON1,28,112,50,14
+    PUSHBUTTON      "取消",IDC_CANCEL_BUTTON2,108,112,50,14
+    PUSHBUTTON      "返回",IDC_BACK_BUTTON,152,140,28,11
+END
+
+IDD_ReaderWorkShip_DIALOG4 DIALOG DISCARDABLE  0, 0, 187, 188
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "读者界面"
+MENU IDR_MENU1
+FONT 10, "System"
+BEGIN
+END
+
+IDD_ReaderBookList_DIALOG5 DIALOGEX 0, 0, 187, 230
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "书目录"
+MENU IDR_MENU1
+FONT 10, "System"
+BEGIN
+    CONTROL         "List5",IDC_BOOK_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_ALIGNLEFT | WS_BORDER,7,7,173,216,
+                    WS_EX_LEFTSCROLLBAR
+END
+
+IDD_AdminLogin_DIALOG6 DIALOG DISCARDABLE  0, 0, 187, 167
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "管理员登录界面"
+FONT 10, "System"
+BEGIN
+    GROUPBOX        "管理员登录界面",IDC_STATIC,20,13,145,117
+    LTEXT           "账号",IDC_STATIC,28,32,17,8,NOT WS_GROUP
+    EDITTEXT        IDC_ACCOUNT_EDIT1,50,30,96,14,ES_AUTOHSCROLL | WS_GROUP
+    LTEXT           "密码",IDC_STATIC,29,54,17,8
+    EDITTEXT        IDC_PASSWORD_EDIT2,50,50,97,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "登录",IDC_LOGIN_BUTTON1,28,110,50,14
+    PUSHBUTTON      "取消",IDC_CANCEL_BUTTON2,108,110,50,14
+    PUSHBUTTON      "返回",IDC_BACK_BUTTON,152,149,28,11
+END
+
+IDD_ReaderPriInfor_DIALOG7 DIALOGEX 0, 0, 187, 215
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "个人消息"
+MENU IDR_MENU1
+FONT 10, "System"
+BEGIN
+    CONTROL         "List5",IDC_READER_PRI_INFOR_LIST,"SysListView32",
+                    LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER,13,13,161,183,
+                    WS_EX_LEFTSCROLLBAR
+END
+
+IDD_SearBroReBook_DIALOG8 DIALOG DISCARDABLE  0, 0, 187, 147
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "查借还书"
+MENU IDR_MENU1
+FONT 10, "System"
+BEGIN
+    LTEXT           "书名",IDC_STATIC,18,30,17,8
+    EDITTEXT        IDC_SEARCH_BOOK_NAME_EDIT1,37,28,82,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "查找",IDC_SEARCH_BUTTON1,129,28,28,14
+    GROUPBOX        "查找结果和借还界面",IDC_STATIC,19,50,144,68
+    LTEXT           "书名",IDC_STATIC,24,62,17,8
+    EDITTEXT        IDC_BOOK_NAME_EDIT2,43,60,82,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    LTEXT           "编号",IDC_STATIC,25,76,17,8
+    EDITTEXT        IDC_BOOKID_EDIT2,43,75,82,12,ES_AUTOHSCROLL
+    LTEXT           "数量",IDC_STATIC,25,91,17,8
+    EDITTEXT        IDC_SUM_EDIT3,43,88,82,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "借阅书籍",IDC_BRO_BUTTON2,127,60,33,14
+    PUSHBUTTON      "归还书籍",IDC_RETURN_BUTTON3,128,80,34,14
+    LTEXT           "日期",IDC_STATIC,26,104,17,8
+    EDITTEXT        IDC_Month_EDIT5,57,102,59,12,ES_AUTOHSCROLL
+    LTEXT           "月:",IDC_STATIC,45,104,10,8
+END
+
+IDD_BroRecord_DIALOG9 DIALOGEX 0, 0, 187, 216
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "借阅记录"
+MENU IDR_MENU1
+FONT 10, "System"
+BEGIN
+    CONTROL         "List5",IDC_BRO_RECORD_LIST,"SysListView32",LVS_REPORT | 
+                    WS_BORDER,13,13,161,185,WS_EX_ACCEPTFILES | 
+                    WS_EX_LEFTSCROLLBAR
+END
+
+IDD_AdminManagemetnt_DIALOG10 DIALOG DISCARDABLE  0, 0, 187, 189
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "管理员界面"
+MENU IDR_MENU2
+FONT 10, "System"
+BEGIN
+END
+
+IDD_BookManagement_DIALOG11 DIALOG DISCARDABLE  0, 0, 187, 207
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "图书管理界面"
+MENU IDR_MENU2
+FONT 10, "System"
+BEGIN
+    GROUPBOX        "图书的基本信息",IDC_STATIC,14,14,160,183
+    LTEXT           "书名",IDC_STATIC,22,30,17,8
+    EDITTEXT        IDC_BOOK_NAME_EDIT1,41,28,102,14,ES_AUTOHSCROLL
+    LTEXT           "编号",IDC_STATIC,21,47,17,8
+    EDITTEXT        IDC_BOOKID_EDIT2,45,44,119,14,ES_AUTOHSCROLL
+    LTEXT           "作者",IDC_STATIC,21,63,17,8
+    EDITTEXT        IDC_AUTHOR_EDIT3,45,60,120,14,ES_AUTOHSCROLL
+    LTEXT           "出版社",IDC_STATIC,20,80,25,8
+    EDITTEXT        IDC_PRESS_EDIT4,49,77,118,14,ES_AUTOHSCROLL
+    LTEXT           "出版日期",IDC_STATIC,19,100,33,8
+    EDITTEXT        IDC_DATE_EDIT5,53,96,115,14,ES_AUTOHSCROLL
+    LTEXT           "定价",IDC_STATIC,19,121,17,8
+    EDITTEXT        IDC_PRICE_EDIT6,43,118,124,14,ES_AUTOHSCROLL
+    LTEXT           "数量",IDC_STATIC,19,141,17,8
+    EDITTEXT        IDC_SUM_EDIT7,43,138,123,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "查找",IDC_SEARCH_BUTTON1,149,28,22,14
+    PUSHBUTTON      "删除图书",IDC_DEL_BUTTON2,19,172,50,14
+    PUSHBUTTON      "增加图书",IDC_ADD_BUTTON3,73,172,50,14
+END
+
+IDD_BookList2_DIALOG12 DIALOGEX 0, 0, 187, 245
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "书目录"
+MENU IDR_MENU2
+FONT 10, "System"
+BEGIN
+    CONTROL         "List5",IDC_BOOK_LIST2,"SysListView32",LVS_REPORT | 
+                    LVS_ALIGNLEFT | WS_BORDER,13,18,161,213,
+                    WS_EX_LEFTSCROLLBAR
+END
+
+IDD_AllReaderList_DIALOG13 DIALOG DISCARDABLE  0, 0, 187, 227
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "借阅者名单"
+MENU IDR_MENU2
+FONT 10, "System"
+BEGIN
+    CONTROL         "List1",IDC_ALL_READER_LIST1,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,13,18,160,196
+END
+
+IDD_ReaderManagement_DIALOG14 DIALOG DISCARDABLE  0, 0, 187, 235
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "读者管理"
+MENU IDR_MENU2
+FONT 10, "System"
+BEGIN
+    GROUPBOX        "读者个人信息",IDC_STATIC,14,18,158,126
+    LTEXT           "姓名",IDC_STATIC,23,36,17,8
+    EDITTEXT        IDC_NAME_EDIT1,49,34,75,14,ES_AUTOHSCROLL
+    LTEXT           "编号(账号)",IDC_STATIC,24,56,37,8
+    EDITTEXT        IDC_ID_EDIT2,63,55,102,14,ES_AUTOHSCROLL
+    LTEXT           "密码",IDC_STATIC,24,75,17,8
+    EDITTEXT        IDC_PASSWORD_EDIT3,48,72,116,14,ES_AUTOHSCROLL
+    LTEXT           "借阅书籍/日期",IDC_STATIC,16,147,51,8
+    LISTBOX         IDC_BOOK_DATE_LIST2,14,159,158,60,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "修改密码",IDC_UPDATE_BUTTON2,22,116,41,14
+    PUSHBUTTON      "删除",IDC_DEL_BUTTON3,76,116,40,14
+    PUSHBUTTON      "新增",IDC_ADD_BUTTON4,130,116,37,14
+    PUSHBUTTON      "查找",IDC_SEARCH_READER_BUTTON5,130,34,36,14
+    EDITTEXT        IDC_PRO_EDIT4,48,90,116,14,ES_AUTOHSCROLL
+    LTEXT           "专业",IDC_STATIC,23,94,17,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "LiberarySystem Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "LiberarySystem\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2022\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "LiberarySystem.EXE\0"
+            VALUE "ProductName", "LiberarySystem 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_LIBERARYSYSTEM_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 225
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 211
+    END
+
+    IDD_Register_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 189
+    END
+
+    IDD_Login_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 159
+    END
+
+    IDD_StuLogin_DIALOG3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 155
+    END
+
+    IDD_ReaderWorkShip_DIALOG4, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 181
+    END
+
+    IDD_ReaderBookList_DIALOG5, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 223
+    END
+
+    IDD_AdminLogin_DIALOG6, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 160
+    END
+
+    IDD_ReaderPriInfor_DIALOG7, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 208
+    END
+
+    IDD_SearBroReBook_DIALOG8, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 140
+    END
+
+    IDD_BroRecord_DIALOG9, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 209
+    END
+
+    IDD_AdminManagemetnt_DIALOG10, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 182
+    END
+
+    IDD_BookManagement_DIALOG11, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 200
+    END
+
+    IDD_BookList2_DIALOG12, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 238
+    END
+
+    IDD_AllReaderList_DIALOG13, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 220
+    END
+
+    IDD_ReaderManagement_DIALOG14, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 228
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU DISCARDABLE 
+BEGIN
+    MENUITEM "查看书籍目录",                ID_CHECK_BOOK
+    MENUITEM "查借还书",                    ID_SEARCH_BRO_RE_BOOK
+    MENUITEM "查看个人信息",                ID_SEAR_PRIVATE_INFOR
+    MENUITEM "查看借阅记录",                ID_BRO_RECORD
+END
+
+IDR_MENU2 MENU DISCARDABLE 
+BEGIN
+    POPUP "读者管理"
+    BEGIN
+        MENUITEM "查删增改读者信息",            ID_CHEC_DEL_ADD_UP_READER
+        MENUITEM "查看全部读者",                ID_CHECK_ALL_READER
+    END
+    POPUP "图书管理"
+    BEGIN
+        MENUITEM "查删增改图书信息",            ID_CHEC_DEL_ADD_UP_BOOK
+        MENUITEM "查看全部图书信息",            ID_CHECK_ALL_BOOKS
+    END
+    MENUITEM "退出系统",                    ID_EXIT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 LiberarySystem(&A)..."
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\LiberarySystem.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
